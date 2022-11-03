@@ -1,0 +1,15 @@
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader div {
+  height: 2rem;
+  width: 2rem;
+  color: #566;
+  border-radius: 50%;
+}

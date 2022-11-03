@@ -1,0 +1,44 @@
+.Home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 0.8fr;
+  gap: 1rem;
+  height: calc(100vh - 1rem);
+}
+
+.home-navicons {
+  display: block;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.home-navicons svg {
+  cursor: pointer !important  ;
+}
+
+@media screen and (max-width: 900px) {
+  .Home {
+    grid-template-columns: 0 1fr auto;
+    gap: 0;
+    height: 100vh;
+    position: relative;
+    /* overflow-y: hidden; */
+  }
+  .RightSection {
+    display: none;
+  }
+  .home-navicons {
+    position: absolute;
+    display: block;
+    bottom: 2.5rem;
+    width: 100%;
+    visibility: visible;
+  }
+  .home-navicons .navIcons {
+    background-color: #ccc;
+    margin: auto;
+    padding: 0.4rem 0.8rem;
+    height: 2rem;
+  }
+}

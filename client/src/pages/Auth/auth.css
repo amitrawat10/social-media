@@ -1,0 +1,121 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4rem;
+  position: relative;
+}
+
+.Auth > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-left {
+  gap: 2rem;
+}
+
+.a-left > img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.webname > h1 {
+  font-size: 3rem;
+  background-color: red;
+
+  background-image: var(--buttonBg);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.webname h6 {
+  font-size: 0.85rem;
+}
+
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoInput {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.infoForm > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 90%;
+}
+.already {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.authForm {
+  background-color: var(--cardColor);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.authForm > div {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.signup-btn {
+  border-radius: 5px;
+  padding: 0.3rem 1.2rem;
+  font-size: 16px;
+  border: 1px solid #1fa2ff !important;
+}
+
+.signup-btn:hover {
+  border: 1px solid #1fa2ff !important;
+  color: #1fa2ff;
+}
+
+@media screen and (max-width: 800px) {
+  .Auth {
+    flex-direction: column;
+    gap: 0;
+  }
+  .a-left {
+    gap: 1rem;
+  }
+
+  .a-left > img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+  .webname > h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  .webname h6 {
+    font-size: 0.67rem;
+    margin-top: 0;
+  }
+}

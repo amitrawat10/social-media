@@ -1,0 +1,24 @@
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.navIcons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navIcons svg {
+  cursor: pointer !important;
+}
+
+.r-btn {
+  height: 2.6rem;
+  width: 80%;
+  align-self: center;
+  font-weight: bold;
+  font-size: 16px;
+  border: var(--buttonBg);
+}

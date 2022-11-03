@@ -1,0 +1,13 @@
+.PostSection {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 1rem;
+  height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+  .PostSection {
+    gap: 0;
+  }
+}
